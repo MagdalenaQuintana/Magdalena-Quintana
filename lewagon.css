@@ -1,0 +1,138 @@
+body {
+    font-family: Chivo;
+    background-color:#b0b0c5;
+}
+
+h1 { 
+    color: white;  
+}
+
+h2 { 
+    font-size: 1.8em; 
+    padding: 5px 25px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 35px;
+    margin-right: 0px;
+}
+
+h3 { 
+    font-size: 25px; 
+
+}
+
+p {
+    font-size: 18px;  
+    display: block;
+
+ }
+ 
+.banner {
+      background-image: url("Pics/banner.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 150px 0;
+      text-align: center;
+      width: 100%;
+
+  }
+
+.banner p {
+    color: white;
+    opacity: 0.7; 
+    margin: 40px 0px;
+    font-size: 24px
+  }
+
+.btn-blue {
+     padding: 16px 48px;
+     background: blue;
+     color: white;  
+     text-decoration: none;
+     margin: 24px 0px;
+  }
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 5px;  
+  }
+
+.card-white img {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    object-fit: cover;
+    padding: 0px 0px;
+  }
+ 
+.card-white{
+    padding: 40px 40px;
+    margin: 0px 25px;
+    background-color: white;
+    box-shadow: 5px 5px rgba(red, green, rgb(66, 66, 70), alpha);
+    border-radius: 5px;    
+}
+.container {
+    margin: 60px auto;
+    width: 1100px;
+}
+
+.footer p{
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-align: left;
+}
+
+.footer {
+    background-color:#404042;
+    background-size: cover;
+    padding: 50px;
+    width: 100%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* Container media queries */
+
+@media (max-width: 1000px)
+    {.container {
+        width:900px;
+        margin: 10px auto;}
+    }
+
+@media (max-width: 700px)
+    {.container {
+        width:600px;
+        margin: 10px auto;}
+    }
+@media (max-width: 300px)
+    {.container {
+        width:200px;
+        margin: 10px auto;}
+    }
+
+/* Cards media queries */
+
+@media (max-width: 1200px)
+    {.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+@media (max-width: 700px)
+    {.cards {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 16px; }
+    }
+
+@media (max-width: 300px)
+    {.cards {
+        grid-template-columns: 1fr;
+        grid-column:1/3 ;
+         }
+    }
